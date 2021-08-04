@@ -14,7 +14,7 @@ window.addEventListener("load", function() {
                     <h3> ${sortedByHours[i].firstName} ${sortedByHours[i].lastName} </h3>
                     <ul>
                         <li>Hours in space: ${sortedByHours[i].hoursInSpace}</li>
-                        <li class=${sortedByHours[i].active ? "active" : ""}> Active: ${sortedByHours[i].active} </li>
+                        <li ${sortedByHours[i].active ? 'style="color:green"' : 'style="color:red"'}> Active: ${sortedByHours[i].active} </li>
                         <li>Skills: ${sortedByHours[i].skills} </li>
                     </div>
                 <img class="avatar" src="${sortedByHours[i].picture}">            
